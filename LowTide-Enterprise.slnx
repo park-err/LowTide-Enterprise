@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="../LowTide-Enterprise/LowTideEnt.API/LowTideEnt.API.csproj" />
+    <Project Path="../LowTide-Enterprise/LowTideEnt.Application/LowTideEnt.Application.csproj" />
+    <Project Path="../LowTide-Enterprise/LowTideEnt.Data/LowTideEnt.Infrastructure.csproj" />
+    <Project Path="../LowTide-Enterprise/LowTideEnt.Domain/LowTideEnt.Domain.csproj" />
+    <Project Path="../LowTide-Enterprise/LowTideEnt.Web/LowTideEnt.Web.esproj">
+      <Build />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Project Path="../LowTide-Enterprise/LowTide-Enterprise.Test/LowTide-Enterprise.Test.csproj" />
+</Solution>

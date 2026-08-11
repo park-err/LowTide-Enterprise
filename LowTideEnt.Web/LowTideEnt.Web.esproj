@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.5581896">
+  <PropertyGroup>
+    <!-- Start Vite dev server with specific host -->
+    <StartupCommand>npm run dev -- --host 127.0.0.1 --port 5173</StartupCommand>
+    <!--
+	  <JavaScriptTestRoot>.\</JavaScriptTestRoot>
+	<JavaScriptTestFramework>Vitest</JavaScriptTestFramework>
+	-->
+    <!-- Allows the build (or compile) script located on package.json to run on Build -->
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
+    <!-- Open browser after dev server starts -->
+    <StartBrowserOnDebug>false</StartBrowserOnDebug>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".vscode\launch.json" />
+    <None Include=".vscode\tasks.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\views\resourceLibrary\components\" />
+    <Folder Include="src\views\resourceLibrary\store\" />
+  </ItemGroup>
+</Project>
